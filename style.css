@@ -1,0 +1,520 @@
+*{
+  box-sizing: inherit;
+}
+
+body{
+  font-size: 10pt;
+  background: url("http://zidzidkids.com/wp-content/uploads/2017/02/f25a2b32-blue-paint-1.png") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+h1{
+  font-family: Museo Slab;
+  font-weight: 700;
+  font-size: 3.3em;
+  width: 40%;
+  color: #FADC28;
+  text-align: center;
+  margin: 0px auto;
+  margin-bottom: 30px;
+}
+
+h3{
+  font-family: Museo Slab;
+  font-weight: 700;
+  font-size: 2em;
+  text-align: center;
+  color: #313131;
+  margin: 0px auto;
+  width: 19vw;
+}
+
+p{
+  font-family: Proxima Nova;
+  font-weight: normal;
+  font-size: 1.5em;
+  color: #F1F1DF;
+  width: 45%;
+  margin: 0px auto;
+}
+
+#handlogo{
+  text-align: center;
+  margin-bottom: 42px;
+}
+
+#handlogo img{
+  width: 17vw;
+  height: auto;
+  padding-right: 8vw;
+}
+
+#handlogo img:hover{
+  cursor: pointer;
+}
+
+#intro{
+  text-align: center;
+}
+
+#options{
+  width: 60%;
+  margin: auto;
+  position: relative;
+}
+
+form{
+  font-family: 'Museo Slab';
+  font-weight: normal;
+}
+
+#families, #schools{
+  width: 35%;
+  height: 300px;
+  background-color: #F0F0DC;
+  border: 1px solid #F0F0DC;
+  border-radius: 12px;
+  margin-top: 50px;
+  padding: 4%;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+#families{
+  margin-right: 5%;
+  float: right;
+  animation: 1s ease-in-out forwards;
+}
+
+#schools{
+  margin-left: 5%;
+  float: left;
+  animation: 1s ease-in-out forwards;
+}
+
+#families p, #schools p{
+  color: #313131;
+  width: 19vw;
+  font-size: 1.3em;
+  text-align: left;
+  margin-top: 15px;
+}
+
+#goBack, #goBack2{
+  padding: 0px;
+  text-align: left;
+  margin: 0px;
+  width: 0%;
+  padding: 0px;
+  display: inline;
+  float: left;
+}
+
+p#goBack, p#goBack2{
+  width: 12pt;
+  font-size: 1.7em;
+  margin: 0px;
+  margin-top: -3%;
+  margin-left: -3%;
+  padding: 0px;
+  display: none;
+  color: #40B3B3;
+  font-weight: bold;
+}
+
+#goBack img, #goBack2 img{
+  width: 100%;
+}
+
+#goBack:hover, #goBack2:hover{
+  cursor: pointer;
+}
+
+#famMainContent, #schoolsMainContent{
+  flex-direction: row;
+  justify-content: center;
+  display: flex;
+}
+
+#familiesIntro, #schoolsIntro{
+  width: 90%;
+  padding-top: 0px;
+}
+
+#parentButton, #schoolButton{
+  text-align: center;
+  padding: 10px;
+  font-family: "Museo Slab", Arvo, "Crete Round", serif !important;
+  color: #F0F0DC;
+  border: 1px solid #F15B36;
+  border-radius: 100px;
+  font-size: 1.3em;
+  background: #F15B36;
+  width: 200px;
+  margin-top: 20px;
+  box-shadow: 0px 4px 1px #CF452A;
+  display: inline;
+  animation: .2s linear;
+  font-weight: 700;
+}
+
+#parentButton:hover, #schoolButton:hover{
+  cursor: pointer;
+  background: #CF452A;
+  border: 1px solid #CF452A;
+}
+
+form{
+  width: 50%;
+  margin-right: 5%;
+  align-items: center;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#familiesForm input, #schoolsForm input{
+  width: 20vw;
+  background: none;
+  border: none;
+  border-bottom: 1px solid #D3D3C5;
+  border-radius: 0px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-family: 'Proxima Nova', 'Cabin', sans-serif !important;
+  font-size: 1.3em;
+  color: #313131;
+  display: none;
+  animation: .2s linear;
+}
+
+::-webkit-input-placeholder{
+  color: #646464;
+  font-family: 'Proxima Nova', 'Cabin', sans-serif !important;
+}
+
+input.inputInvalid::-webkit-input-placeholder{
+  color: #F15B36;
+  font-style: italic;
+}
+
+#schoolsForm input{
+  margin-top: 6px;
+  margin-bottom: 6px;
+}
+
+#familiesForm #fFirstName:focus, #schoolsForm #sFirstName:focus{
+  border-bottom: 1.5px solid #F68B2B;
+  outline: none;
+}
+
+#familiesForm #fLastName:focus, #schoolsForm #sLastName:focus{
+  border-bottom: 1.5px solid #40B3B3;
+  outline: none;
+}
+
+#familiesForm #fEmail:focus, #schoolsForm #sEmail:focus{
+  border-bottom: 1.5px solid #D72782;
+  outline: none;
+}
+
+#schoolsForm #sPhone:focus{
+  border-bottom: 1.5px solid #63963F;
+  outline: none;
+}
+
+#schoolsForm #sSchool:focus{
+  border-bottom: 1.5px solid #F68B2B;
+  outline: none;
+}
+
+#familiesForm #fSubmit, #schoolsForm #sSubmit{
+  width: 60%;
+  text-align: center;
+  padding: 10px;
+  font-family: "Museo Slab", Arvo, "Crete Round", serif !important;
+  font-weight: 700;
+  color: #F0F0DC;
+  border: 1px solid #F15B36;
+  border-radius: 100px;
+  font-size: 1.3em;
+  background: #F15B36;
+  margin-top: 20px;
+  box-shadow: 0px 4px 1px #CF452A;
+}
+
+#familiesForm #fSubmit:hover, #schoolsForm #sSubmit:hover{
+  cursor: pointer;
+  background: #CF452A;
+  border: 1px solid #CF452A;
+}
+
+@keyframes fadeOut {
+  0% {opacity: 1;}
+  100% {opacity: 0;}
+}
+
+@keyframes fadeIn {
+  0%{opacity: 0;}
+  100%{opacity: 1;}
+}
+
+@keyframes stretchRight {
+  0% {width: 35%;}
+  100% {width: 82%;}
+}
+
+@keyframes stretchRight2 {
+  0%{width: 40%;}
+  100%{width: 86%;}
+}
+
+@keyframes shrinkLeft {
+  0% {width: 82%;}
+  100% {width: 35%;}
+}
+
+@keyframes shrinkLeft2 {
+  0% {width: 86%;}
+  100% {width: 40%;}
+}
+
+@keyframes stretchUp {
+  0% {height: 270px;
+      margin-top: 300px;}
+  100% {height: 570px;
+        margin-top: 0px;}
+}
+
+@keyframes stretchDown {
+  0% {height: 270px;}
+  100% {height: 570px;}
+}
+
+@keyframes shrinkUp {
+  0% {height: 530px;}
+  100% {height: 270px;}
+}
+
+@media only screen and (max-width: 1100px){
+  h1{
+    width: 50%;
+  }
+
+  #options{
+    width: 90%;
+  }
+
+  h3{
+    width: auto;
+    font-size: 2em;
+  }
+
+  p{
+    width: 60%;
+    font-size: 1.2em;
+  }
+
+  #families, #schools{
+    padding: 2%;
+    padding-top: 5%;
+    width: 40%;
+  }
+
+  #families p, #schools p{
+    width: 32vw;
+  }
+
+  #goBack, #goBack2{
+    padding: 0px;
+    text-align: left;
+    margin: 0px;
+    width: 0%;
+    padding: 0px;
+    display: inline;
+    float: left;
+  }
+
+  p#goBack, p#goBack2{
+    width: 12pt;
+    font-size: 1.7em;
+    margin: 0px;
+    margin-top: -30px;
+    margin-left: -5px;
+    padding: 0px;
+    display: none;
+    color: #40B3B3;
+    font-weight: bold;
+  }
+
+  #goBack img, #goBack2 img{
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 800px){
+  h1{
+    width: 53%;
+    font-size: 2.2em;
+  }
+
+  p{
+    width: 60%;
+    font-size: 1.2em;
+  }
+
+  #families, #schools{
+    margin-top: 0px;
+  }
+
+  #families p, #schools p{
+    width: 32vw;
+  }
+
+  #intro{
+    display: none;
+  }
+
+  #goBack, #goBack2{
+    padding: 0px;
+    text-align: left;
+    margin: 0px;
+    width: 0%;
+    padding: 0px;
+    display: inline;
+    float: left;
+  }
+
+  p#goBack, p#goBack2{
+    width: 12pt;
+    font-size: 1.7em;
+    margin: 0px;
+    margin-top: -30px;
+    margin-left: -5px;
+    padding: 0px;
+    display: none;
+    color: #40B3B3;
+    font-weight: bold;
+  }
+
+  #goBack img, #goBack2 img{
+    width: 100%;
+  }
+
+}
+
+@media only screen and (max-width: 600px){
+  body{
+    background-attachment: scroll;
+  }
+
+  h1{
+    font-size: 3em;
+    width: 85%;
+    text-align: left;
+  }
+
+  h3{
+    text-align: left;
+  }
+
+  p{
+    width: 85%;
+    margin-bottom: 30px;
+  }
+
+  #intro{
+    display: none;
+  }
+
+  #handlogo img{
+    width: 45vw;
+    padding-right: 22vw;
+  }
+
+  #options{
+    width: 90%;
+    margin: 0px auto;
+    min-height: 700px;
+  }
+
+  #families, #schools{
+    padding: 5%;
+    padding-top: 10%;
+    width: 90%;
+    height: 270px;
+    float: none;
+    margin: 0px auto;
+    margin-bottom: 30px;
+  }
+
+  #families p, #schools p{
+    width: 100%;
+    text-align: left;
+    margin-left: 0px;
+    margin-bottom: 0px;
+    min-height: 0;
+  }
+
+  #goBack, #goBack2{
+    padding: 0px;
+    text-align: left;
+    margin: 0px;
+    width: 0%;
+    padding: 0px;
+    display: inline;
+    float: left;
+  }
+
+  p#goBack, p#goBack2{
+    width: 12pt;
+    font-size: 1.7em;
+    margin: 0px;
+    margin-top: -30px;
+    margin-left: -5px;
+    padding: 0px;
+    display: none;
+    color: #40B3B3;
+    font-weight: bold;
+  }
+
+  #goBack img, #goBack2 img{
+    width: 100%;
+  }
+
+  #famMainContent, #schoolsMainContent{
+    flex-direction: column;
+  }
+
+  #familiesIntro, #schoolsIntro{
+    width: 90%;
+    margin: auto;
+  }
+
+  #parentButton, #schoolButton{
+    margin: 0px auto;
+    margin-top: 30px;
+  }
+
+  form{
+    margin-top: 30px;
+    width: 100%;
+  }
+
+  #familiesForm input, #schoolsForm input{
+    width: 90%;
+  }
+
+  #schoolsForm input{
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
+  #familiesForm input{
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<head>
+  <meta name="viewport" content="width=device-width initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <title>Contact</title>
+</head>
+<body>
+  <div id="handlogo">
+    <a href="http://zidzidkids.com">
+      <img src="http://zidzidkids.com/wp-content/uploads/2017/05/logo_hand.png" alt="Zid Zid">
+    </a>
+  </div>
+
+  <h1>Sign up to get early access to Zid Zid</h1>
+  <p id="intro">Zid Zid is the first subscription-based platform designed to empower preschool children, together with their parents and teachers, to discover world languages all through play.</p>
+
+  <div id="options">
+    <div id="schools">
+      <p id="goBack2" onclick="hideSContact()"><img src="http://zidzidkids.com/wp-content/uploads/2017/06/close-icon.png" alt=""></p>
+      <div id="schoolsMainContent">
+         <div id="schoolsIntro">
+           <h3>For Schools...</h3>
+           <p>Zid Zid for School is available for the 2017-18 school year. To contact us and schedule a demo session, please sign up for our newsletter and we will get in touch with you!</p>
+           <button type="button" name="school" id="schoolButton" onclick="parentFade()" style="font-family: Museo Slab">I'm an Educator</button>
+         </div>
+         <form id="schoolsForm" action="https://zidzidkids.us3.list-manage.com/subscribe/post" method="POST" onsubmit="return validateSForm();">
+           <input style="font-family: Proxima Nova, sans-serif" type="text" class="form-button-area" id="sFirstName" name="MERGE1" value="" placeholder="First Name" required>
+           <input type="text" class="form-button-area" id="sLastName" name="MERGE2" value="" placeholder="Last Name" required>
+           <input type="email" class="form-button-area" id="sEmail" name="MERGE0" value="" placeholder="Work Email" required>
+           <input type="tel" class="form-button-area" id="sPhone" name="MERGE3" value="" placeholder="Phone Number" required>
+           <input type="text" class="form-button-area" id="sSchool" name="MERGE4" value="" placeholder="School" required>
+           <input type="submit" id="sSubmit" name="sSubmit" value="Subscribe">
+         </form>
+       </div>
+    </div>
+
+    <div id="families">
+       <p id="goBack" onclick="hideFContact()"><img src="http://zidzidkids.com/wp-content/uploads/2017/06/close-icon.png"></p>
+       <div id = "famMainContent">
+         <div id="familiesIntro">
+           <h3>For Families...</h3>
+           <p>We are currently preparing the roll-out of Zid Zid for Families. Please sign up for our newsletter to keep up to date about our developments and become one of our first users!</p>
+           <button type="button" name="parent" id="parentButton" onclick="schoolFade()">I'm a Parent</button>
+         </div>
+         <form id="familiesForm" action="https://zidzidkids.us3.list-manage.com/subscribe/post" method="POST" onsubmit="return validateFForm();">
+           <input type="text" class="form-button-area" id="fFirstName" name="MERGE1" value="" placeholder="First Name" required>
+           <input type="text" class="form-button-area" id="fLastName" name="MERGE2" value="" placeholder="Last Name" required>
+           <input type="email" class="form-button-area" id="fEmail" name="MERGE0" value="" placeholder="Email" required>
+           <input type="submit" class="form-button-area" id="fSubmit" name="fSubmit" value="Subscribe">
+         </form>
+       </div>
+     </div>
+
+    <br style = "clear: both"></br>
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
